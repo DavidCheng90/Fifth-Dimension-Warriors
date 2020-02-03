@@ -1,4 +1,4 @@
-# Fifth-Dimension-Warriors
+# Fifth Dimension Warriors
 1 vs. 1 battle arena game.
 
 ## How to Download and Play
@@ -25,4 +25,4 @@
 
 4.) Open "Fifth_Dimension_Warriors.sln" file to view source code.
 
-(NOTE: The source code will have a few errors related to resources (e.g. sprite images, songs, etc.) since they were not included due to file size reasons.)
+(NOTE: The source code will have a few errors related to resources (e.g. sprite images, songs, etc.) as they were not included for file size reasons.)
