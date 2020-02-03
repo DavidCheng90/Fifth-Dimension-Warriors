@@ -1,0 +1,901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BackBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vec2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FDWGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Warrior.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BackBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FDWGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Warrior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Fifth Dimension Warriors.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Start Screen Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Arena 1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Arena 2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Arena 3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Arena Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Bar Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Bar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Player 1 Dimitri.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Player 1 LiuJiao.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Player 1 Quattro.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Player 1 Seraphina.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Player 2 Dimitri.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Player 2 LiuJiao.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Player 2 Quattro.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Player 2 Seraphina.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Player 1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Player 2 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 1A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 1A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 1B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 1B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 1C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 1C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 1D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 1D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 2A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 2A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 2B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 2B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 2C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 2C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 2D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 2D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 3A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 3A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 3B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 3B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 3C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 3C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 3D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 4A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 4A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 4B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 4B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 4C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 4C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 4D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Quattro 4D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 1A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 1A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 1B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 1B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 1C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 1C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 1D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 1D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 2A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 2A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 2B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 2B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 2C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 2C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 2D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 2D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 3A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 3A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 3B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 3B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 3C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 3C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 3D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 4A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 4A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 4B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 4B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 4C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 4C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 4D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Dimitri 4D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 1A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 1A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 1B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 1B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 1C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 1C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 1D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 1D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 2A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 2A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 2B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 2B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 2C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 2C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 2D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 2D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 3A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 3A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 3B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 3B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 3C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 3C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 3D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 4A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 4A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 4B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 4B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 4C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 4C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 4D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior LiuJiao 4D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 1A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 1A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 1B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 1B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 1C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 1C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 1D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 1D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 2A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 2A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 2B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 2B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 2C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 2C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 2D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 2D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 3A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 3A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 3B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 3B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 3C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 3C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 3D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 4A Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 4A.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 4B Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 4B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 4C Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 4C.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 4D Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Warrior Seraphina 4D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W10.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao E1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao E1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao R1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao R1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao R2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao R3 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao R3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro E1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro E1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q7 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro Q9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro R1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro R1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro R2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro R3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro R4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro W1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro W1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina E1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina E1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina Q1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina Q1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina Q2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina Q3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina Q4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina Q5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina R1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina R1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina W1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina W1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Seraphina W2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 10.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 12.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 13.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 14.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 15.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 17.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 18.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 19.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown 20.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cooldown Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Counter 1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Counter 1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Counter 2 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Counter 2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Counter 3 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Counter 3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro W2 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro W2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro W3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Quattro W4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri E1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri E1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri E2 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri E2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri Q1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri Q1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri Q2 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri Q2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri Q3 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri Q3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W11 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack Dimitri W11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao Q1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao Q2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao Q1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack LiuJiao Q3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Selection Screen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Start Play Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Start Title.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Start Title Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Start Screen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Start Exit.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Start Play.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Winner 1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Winner 2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Winner 4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Winner 5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Winner Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Winner 3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Announce 1 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Announce 1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Announce 2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Announce 3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Announce 4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Announce 5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Announce 6 Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Announce 6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Practice Sign Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Battle Practice Sign.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Selection Sign Mask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Selection Sign.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="About Dimitri.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="About LiuJiao.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="About Seraphina.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="About Quattro.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="About Play.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="About Credits.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="About Credits.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

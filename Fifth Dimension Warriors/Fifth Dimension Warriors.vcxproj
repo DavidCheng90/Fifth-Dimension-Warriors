@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{2CE778B0-BD78-41D7-A0A4-7C8805C5963B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FifthDimensionWarriors</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BackBuffer.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="FDWGame.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Vec2.cpp" />
+    <ClCompile Include="Warrior.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BackBuffer.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="FDWGame.h" />
+    <ClInclude Include="Rect.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Vec2.h" />
+    <ClInclude Include="Warrior.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Fifth Dimension Warriors.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="About Credits.bmp" />
+    <Image Include="About Credits.PNG" />
+    <Image Include="About Dimitri.bmp" />
+    <Image Include="About LiuJiao.bmp" />
+    <Image Include="About Play.bmp" />
+    <Image Include="About Quattro.bmp" />
+    <Image Include="About Seraphina.bmp" />
+    <Image Include="Attack Dimitri E1 Mask.bmp" />
+    <Image Include="Attack Dimitri E1.bmp" />
+    <Image Include="Attack Dimitri E2 Mask.bmp" />
+    <Image Include="Attack Dimitri E2.bmp" />
+    <Image Include="Attack Dimitri Q1 Mask.bmp" />
+    <Image Include="Attack Dimitri Q1.bmp" />
+    <Image Include="Attack Dimitri Q2 Mask.bmp" />
+    <Image Include="Attack Dimitri Q2.bmp" />
+    <Image Include="Attack Dimitri Q3 Mask.bmp" />
+    <Image Include="Attack Dimitri Q3.bmp" />
+    <Image Include="Attack Dimitri W1 Mask.bmp" />
+    <Image Include="Attack Dimitri W1.bmp" />
+    <Image Include="Attack Dimitri W10.bmp" />
+    <Image Include="Attack Dimitri W11 Mask.bmp" />
+    <Image Include="Attack Dimitri W11.bmp" />
+    <Image Include="Attack Dimitri W2.bmp" />
+    <Image Include="Attack Dimitri W3.bmp" />
+    <Image Include="Attack Dimitri W4.bmp" />
+    <Image Include="Attack Dimitri W5.bmp" />
+    <Image Include="Attack Dimitri W6.bmp" />
+    <Image Include="Attack Dimitri W7.bmp" />
+    <Image Include="Attack Dimitri W8.bmp" />
+    <Image Include="Attack Dimitri W9.bmp" />
+    <Image Include="Attack LiuJiao E1 Mask.bmp" />
+    <Image Include="Attack LiuJiao E1.bmp" />
+    <Image Include="Attack LiuJiao Q1 Mask.bmp" />
+    <Image Include="Attack LiuJiao Q1.bmp" />
+    <Image Include="Attack LiuJiao Q2.bmp" />
+    <Image Include="Attack LiuJiao Q3.bmp" />
+    <Image Include="Attack LiuJiao R1 Mask.bmp" />
+    <Image Include="Attack LiuJiao R1.bmp" />
+    <Image Include="Attack LiuJiao R2.bmp" />
+    <Image Include="Attack LiuJiao R3 Mask.bmp" />
+    <Image Include="Attack LiuJiao R3.bmp" />
+    <Image Include="Attack Quattro E1 Mask.bmp" />
+    <Image Include="Attack Quattro E1.bmp" />
+    <Image Include="Attack Quattro Q1 Mask.bmp" />
+    <Image Include="Attack Quattro Q1.bmp" />
+    <Image Include="Attack Quattro Q2.bmp" />
+    <Image Include="Attack Quattro Q3.bmp" />
+    <Image Include="Attack Quattro Q4.bmp" />
+    <Image Include="Attack Quattro Q5.bmp" />
+    <Image Include="Attack Quattro Q6.bmp" />
+    <Image Include="Attack Quattro Q7 Mask.bmp" />
+    <Image Include="Attack Quattro Q7.bmp" />
+    <Image Include="Attack Quattro Q8.bmp" />
+    <Image Include="Attack Quattro Q9.bmp" />
+    <Image Include="Attack Quattro R1 Mask.bmp" />
+    <Image Include="Attack Quattro R1.bmp" />
+    <Image Include="Attack Quattro R2.bmp" />
+    <Image Include="Attack Quattro R3.bmp" />
+    <Image Include="Attack Quattro R4.bmp" />
+    <Image Include="Attack Quattro W1 Mask.bmp" />
+    <Image Include="Attack Quattro W1.bmp" />
+    <Image Include="Attack Quattro W2 Mask.bmp" />
+    <Image Include="Attack Quattro W2.bmp" />
+    <Image Include="Attack Quattro W3.bmp" />
+    <Image Include="Attack Quattro W4.bmp" />
+    <Image Include="Attack Seraphina E1 Mask.bmp" />
+    <Image Include="Attack Seraphina E1.bmp" />
+    <Image Include="Attack Seraphina Q1 Mask.bmp" />
+    <Image Include="Attack Seraphina Q1.bmp" />
+    <Image Include="Attack Seraphina Q2.bmp" />
+    <Image Include="Attack Seraphina Q3.bmp" />
+    <Image Include="Attack Seraphina Q4.bmp" />
+    <Image Include="Attack Seraphina Q5.bmp" />
+    <Image Include="Attack Seraphina R1 Mask.bmp" />
+    <Image Include="Attack Seraphina R1.bmp" />
+    <Image Include="Attack Seraphina W1 Mask.bmp" />
+    <Image Include="Attack Seraphina W1.bmp" />
+    <Image Include="Attack Seraphina W2.bmp" />
+    <Image Include="Battle Announce 1 Mask.bmp" />
+    <Image Include="Battle Announce 1.bmp" />
+    <Image Include="Battle Announce 2.bmp" />
+    <Image Include="Battle Announce 3.bmp" />
+    <Image Include="Battle Announce 4.bmp" />
+    <Image Include="Battle Announce 5.bmp" />
+    <Image Include="Battle Announce 6 Mask.bmp" />
+    <Image Include="Battle Announce 6.bmp" />
+    <Image Include="Battle Arena 1.bmp" />
+    <Image Include="Battle Arena 2.bmp" />
+    <Image Include="Battle Arena 3.bmp" />
+    <Image Include="Battle Arena Mask.bmp" />
+    <Image Include="Battle Bar Mask.bmp" />
+    <Image Include="Battle Bar.bmp" />
+    <Image Include="Battle Player 1 Dimitri.bmp" />
+    <Image Include="Battle Player 1 LiuJiao.bmp" />
+    <Image Include="Battle Player 1 Mask.bmp" />
+    <Image Include="Battle Player 1 Quattro.bmp" />
+    <Image Include="Battle Player 1 Seraphina.bmp" />
+    <Image Include="Battle Player 2 Dimitri.bmp" />
+    <Image Include="Battle Player 2 LiuJiao.bmp" />
+    <Image Include="Battle Player 2 Mask.bmp" />
+    <Image Include="Battle Player 2 Quattro.bmp" />
+    <Image Include="Battle Player 2 Seraphina.bmp" />
+    <Image Include="Battle Practice Sign Mask.bmp" />
+    <Image Include="Battle Practice Sign.bmp" />
+    <Image Include="Battle Winner 1.bmp" />
+    <Image Include="Battle Winner 2.bmp" />
+    <Image Include="Battle Winner 3.bmp" />
+    <Image Include="Battle Winner 4.bmp" />
+    <Image Include="Battle Winner 5.bmp" />
+    <Image Include="Battle Winner Mask.bmp" />
+    <Image Include="Cooldown 1.bmp" />
+    <Image Include="Cooldown 10.bmp" />
+    <Image Include="Cooldown 11.bmp" />
+    <Image Include="Cooldown 12.bmp" />
+    <Image Include="Cooldown 13.bmp" />
+    <Image Include="Cooldown 14.bmp" />
+    <Image Include="Cooldown 15.bmp" />
+    <Image Include="Cooldown 16.bmp" />
+    <Image Include="Cooldown 17.bmp" />
+    <Image Include="Cooldown 18.bmp" />
+    <Image Include="Cooldown 19.bmp" />
+    <Image Include="Cooldown 2.bmp" />
+    <Image Include="Cooldown 20.bmp" />
+    <Image Include="Cooldown 3.bmp" />
+    <Image Include="Cooldown 4.bmp" />
+    <Image Include="Cooldown 5.bmp" />
+    <Image Include="Cooldown 6.bmp" />
+    <Image Include="Cooldown 7.bmp" />
+    <Image Include="Cooldown 8.bmp" />
+    <Image Include="Cooldown 9.bmp" />
+    <Image Include="Cooldown Mask.bmp" />
+    <Image Include="Counter 1 Mask.bmp" />
+    <Image Include="Counter 1.bmp" />
+    <Image Include="Counter 2 Mask.bmp" />
+    <Image Include="Counter 2.bmp" />
+    <Image Include="Counter 3 Mask.bmp" />
+    <Image Include="Counter 3.bmp" />
+    <Image Include="Selection Screen.bmp" />
+    <Image Include="Selection Sign Mask.bmp" />
+    <Image Include="Selection Sign.bmp" />
+    <Image Include="Start Exit.bmp" />
+    <Image Include="Start Play Mask.bmp" />
+    <Image Include="Start Play.bmp" />
+    <Image Include="Start Screen Mask.bmp" />
+    <Image Include="Start Screen.bmp" />
+    <Image Include="Start Title Mask.bmp" />
+    <Image Include="Start Title.bmp" />
+    <Image Include="Warrior Dimitri 1A Mask.bmp" />
+    <Image Include="Warrior Dimitri 1A.bmp" />
+    <Image Include="Warrior Dimitri 1B Mask.bmp" />
+    <Image Include="Warrior Dimitri 1B.bmp" />
+    <Image Include="Warrior Dimitri 1C Mask.bmp" />
+    <Image Include="Warrior Dimitri 1C.bmp" />
+    <Image Include="Warrior Dimitri 1D Mask.bmp" />
+    <Image Include="Warrior Dimitri 1D.bmp" />
+    <Image Include="Warrior Dimitri 2A Mask.bmp" />
+    <Image Include="Warrior Dimitri 2A.bmp" />
+    <Image Include="Warrior Dimitri 2B Mask.bmp" />
+    <Image Include="Warrior Dimitri 2B.bmp" />
+    <Image Include="Warrior Dimitri 2C Mask.bmp" />
+    <Image Include="Warrior Dimitri 2C.bmp" />
+    <Image Include="Warrior Dimitri 2D Mask.bmp" />
+    <Image Include="Warrior Dimitri 2D.bmp" />
+    <Image Include="Warrior Dimitri 3A Mask.bmp" />
+    <Image Include="Warrior Dimitri 3A.bmp" />
+    <Image Include="Warrior Dimitri 3B Mask.bmp" />
+    <Image Include="Warrior Dimitri 3B.bmp" />
+    <Image Include="Warrior Dimitri 3C Mask.bmp" />
+    <Image Include="Warrior Dimitri 3C.bmp" />
+    <Image Include="Warrior Dimitri 3D Mask.bmp" />
+    <Image Include="Warrior Dimitri 3D.bmp" />
+    <Image Include="Warrior Dimitri 4A Mask.bmp" />
+    <Image Include="Warrior Dimitri 4A.bmp" />
+    <Image Include="Warrior Dimitri 4B Mask.bmp" />
+    <Image Include="Warrior Dimitri 4B.bmp" />
+    <Image Include="Warrior Dimitri 4C Mask.bmp" />
+    <Image Include="Warrior Dimitri 4C.bmp" />
+    <Image Include="Warrior Dimitri 4D Mask.bmp" />
+    <Image Include="Warrior Dimitri 4D.bmp" />
+    <Image Include="Warrior LiuJiao 1A Mask.bmp" />
+    <Image Include="Warrior LiuJiao 1A.bmp" />
+    <Image Include="Warrior LiuJiao 1B Mask.bmp" />
+    <Image Include="Warrior LiuJiao 1B.bmp" />
+    <Image Include="Warrior LiuJiao 1C Mask.bmp" />
+    <Image Include="Warrior LiuJiao 1C.bmp" />
+    <Image Include="Warrior LiuJiao 1D Mask.bmp" />
+    <Image Include="Warrior LiuJiao 1D.bmp" />
+    <Image Include="Warrior LiuJiao 2A Mask.bmp" />
+    <Image Include="Warrior LiuJiao 2A.bmp" />
+    <Image Include="Warrior LiuJiao 2B Mask.bmp" />
+    <Image Include="Warrior LiuJiao 2B.bmp" />
+    <Image Include="Warrior LiuJiao 2C Mask.bmp" />
+    <Image Include="Warrior LiuJiao 2C.bmp" />
+    <Image Include="Warrior LiuJiao 2D Mask.bmp" />
+    <Image Include="Warrior LiuJiao 2D.bmp" />
+    <Image Include="Warrior LiuJiao 3A Mask.bmp" />
+    <Image Include="Warrior LiuJiao 3A.bmp" />
+    <Image Include="Warrior LiuJiao 3B Mask.bmp" />
+    <Image Include="Warrior LiuJiao 3B.bmp" />
+    <Image Include="Warrior LiuJiao 3C Mask.bmp" />
+    <Image Include="Warrior LiuJiao 3C.bmp" />
+    <Image Include="Warrior LiuJiao 3D Mask.bmp" />
+    <Image Include="Warrior LiuJiao 3D.bmp" />
+    <Image Include="Warrior LiuJiao 4A Mask.bmp" />
+    <Image Include="Warrior LiuJiao 4A.bmp" />
+    <Image Include="Warrior LiuJiao 4B Mask.bmp" />
+    <Image Include="Warrior LiuJiao 4B.bmp" />
+    <Image Include="Warrior LiuJiao 4C Mask.bmp" />
+    <Image Include="Warrior LiuJiao 4C.bmp" />
+    <Image Include="Warrior LiuJiao 4D Mask.bmp" />
+    <Image Include="Warrior LiuJiao 4D.bmp" />
+    <Image Include="Warrior Quattro 1A Mask.bmp" />
+    <Image Include="Warrior Quattro 1A.bmp" />
+    <Image Include="Warrior Quattro 1B Mask.bmp" />
+    <Image Include="Warrior Quattro 1B.bmp" />
+    <Image Include="Warrior Quattro 1C Mask.bmp" />
+    <Image Include="Warrior Quattro 1C.bmp" />
+    <Image Include="Warrior Quattro 1D Mask.bmp" />
+    <Image Include="Warrior Quattro 1D.bmp" />
+    <Image Include="Warrior Quattro 2A Mask.bmp" />
+    <Image Include="Warrior Quattro 2A.bmp" />
+    <Image Include="Warrior Quattro 2B Mask.bmp" />
+    <Image Include="Warrior Quattro 2B.bmp" />
+    <Image Include="Warrior Quattro 2C Mask.bmp" />
+    <Image Include="Warrior Quattro 2C.bmp" />
+    <Image Include="Warrior Quattro 2D Mask.bmp" />
+    <Image Include="Warrior Quattro 2D.bmp" />
+    <Image Include="Warrior Quattro 3A Mask.bmp" />
+    <Image Include="Warrior Quattro 3A.bmp" />
+    <Image Include="Warrior Quattro 3B Mask.bmp" />
+    <Image Include="Warrior Quattro 3B.bmp" />
+    <Image Include="Warrior Quattro 3C Mask.bmp" />
+    <Image Include="Warrior Quattro 3C.bmp" />
+    <Image Include="Warrior Quattro 3D Mask.bmp" />
+    <Image Include="Warrior Quattro 3D.bmp" />
+    <Image Include="Warrior Quattro 4A Mask.bmp" />
+    <Image Include="Warrior Quattro 4A.bmp" />
+    <Image Include="Warrior Quattro 4B Mask.bmp" />
+    <Image Include="Warrior Quattro 4B.bmp" />
+    <Image Include="Warrior Quattro 4C Mask.bmp" />
+    <Image Include="Warrior Quattro 4C.bmp" />
+    <Image Include="Warrior Quattro 4D Mask.bmp" />
+    <Image Include="Warrior Quattro 4D.bmp" />
+    <Image Include="Warrior Seraphina 1A Mask.bmp" />
+    <Image Include="Warrior Seraphina 1A.bmp" />
+    <Image Include="Warrior Seraphina 1B Mask.bmp" />
+    <Image Include="Warrior Seraphina 1B.bmp" />
+    <Image Include="Warrior Seraphina 1C Mask.bmp" />
+    <Image Include="Warrior Seraphina 1C.bmp" />
+    <Image Include="Warrior Seraphina 1D Mask.bmp" />
+    <Image Include="Warrior Seraphina 1D.bmp" />
+    <Image Include="Warrior Seraphina 2A Mask.bmp" />
+    <Image Include="Warrior Seraphina 2A.bmp" />
+    <Image Include="Warrior Seraphina 2B Mask.bmp" />
+    <Image Include="Warrior Seraphina 2B.bmp" />
+    <Image Include="Warrior Seraphina 2C Mask.bmp" />
+    <Image Include="Warrior Seraphina 2C.bmp" />
+    <Image Include="Warrior Seraphina 2D Mask.bmp" />
+    <Image Include="Warrior Seraphina 2D.bmp" />
+    <Image Include="Warrior Seraphina 3A Mask.bmp" />
+    <Image Include="Warrior Seraphina 3A.bmp" />
+    <Image Include="Warrior Seraphina 3B Mask.bmp" />
+    <Image Include="Warrior Seraphina 3B.bmp" />
+    <Image Include="Warrior Seraphina 3C Mask.bmp" />
+    <Image Include="Warrior Seraphina 3C.bmp" />
+    <Image Include="Warrior Seraphina 3D Mask.bmp" />
+    <Image Include="Warrior Seraphina 3D.bmp" />
+    <Image Include="Warrior Seraphina 4A Mask.bmp" />
+    <Image Include="Warrior Seraphina 4A.bmp" />
+    <Image Include="Warrior Seraphina 4B Mask.bmp" />
+    <Image Include="Warrior Seraphina 4B.bmp" />
+    <Image Include="Warrior Seraphina 4C Mask.bmp" />
+    <Image Include="Warrior Seraphina 4C.bmp" />
+    <Image Include="Warrior Seraphina 4D Mask.bmp" />
+    <Image Include="Warrior Seraphina 4D.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
